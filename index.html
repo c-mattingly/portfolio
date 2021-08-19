@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/257385db0d.js"></script>
     <title>Mike Mattingly</title>
 </head>
 
@@ -13,8 +14,14 @@
     <header>
         <div id="header-content">
             <h1>Mike Mattingly</h1>
-            <h3>Full Stack Software Engineer with a background in Risk Analysis</h3>
-            <h4>Phoenix, Arizona</h4>
+            <h3>Full Stack Software Engineer</h3><br />
+            <a href="https://www.linkedin.com/in/c-mike-mattingly/" target="-blank" class="icon">
+                <i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/c-mattingly" target="-blank" class="icon">
+                <i class="fab fa-github-square"></i></a>
+            <a href="mailto:cmattingly1584@gmail.com" target="-blank" class="icon">
+                <i class="fas fa-envelope"></i></a>
+
         </div>
 
     </header>
@@ -31,7 +38,7 @@
                 <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="files/resume.pdf" target="-blank">Resume</a>
+                <a href="files/cmattingly-resume.pdf" target="-blank">Resume</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -50,9 +57,10 @@
                 I have a strong background in Risk Mitigation and Risk Analysis which includes work at Citi's Fraud
                 Investigations Department
                 working the Sears Portfolio of cards and Risk Operations at PayPal.<br />
-                I have completed the Software Engineering Immersive from General Assembly and really like how coding
-                makes
-                it possible to create so many things that can help and be of use to people.
+                I have completed the Software Engineering Immersive from General Assembly and am continuing to build on
+                the foundation that was started there.
+                I really like how coding makes it possible to create so many things that can help and be of use to
+                people.
                 I enjoy the research of finding patterns and making connections from my years of experience in Risk. I
                 look foward to bringing this attention to detail to every task that I endeavor.
 
@@ -66,23 +74,38 @@
         </div>
         <div id="skills-content">
             <div id="skills-list">
-                <span class="skill"><img src="images/javascript.png"><br />JavaScript</span>
-                <span class="skill"><img src="images/react.png"><br />React</span>
-                <span class="skill"><img src="images/nodejs.png"><br />Node.js</span>
-                <span class="skill"><img src="images/mongodb.png"><br />MongoDB</span>
-                <span class="skill"><img src="images/express.png"><br />Express.js</span><br />
-                <span class="skill"><img src="images/python.png"><br />Python</span>
-                <span class="skill"><img src="images/django.png"><br />Django</span>
-                <span class="skill"><img src="images/postgres.png"><br />PostgreSQL</span>
-                <span class="skill"><img src="images/css3.png"><br />CSS</span>
-                <span class="skill"><img src="images/html5.png"><br />HTML</span><br /><br />
+                <table>
+                    <tr>
+                        <td><span class="skill"><img src="images/javascript.png"><br />JavaScript</span></td>
+                        <td><span class="skill"><img src="images/react.png"><br />React</span></td>
+                        <td><span class="skill"><img src="images/nodejs.png"><br />Node.js</span></td>
+                        <td><span class="skill"><img src="images/mongodb.png"><br />MongoDB</span></td>
+                        <td><span class="skill"><img src="images/express.png"><br />Express.js</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="skill"><img src="images/python.png"><br />Python</span></td>
+                        <td><span class="skill"><img src="images/django.png"><br />Django</span></td>
+                        <td><span class="skill"><img src="images/postgres.png"><br />PostgreSQL</span></td>
+                        <td><span class="skill"><img src="images/css3.png"><br />CSS</span></td>
+                        <td><span class="skill"><img src="images/html5.png"><br />HTML</span></td>
+                    </tr>
+                </table> 
+                <table id="skills-table-bottom">
+                    <tr>
+                        <td><span class="skill">Git/GitHub</span>•</td>
+                        <td><span class="skill">Responsive Design</span>•</td>
+                        <td><span class="skill">RESTful API</span>•</td>
+                        <td><span class="skill">OAuth</span>•</td>
+                        <td><span class="skill">Heroku</span></td>
+                    </tr>
+                </table>
 
 
-                <span class="skill">Git/GitHub</span>•
-                <span class="skill">Responsive Design</span>•
-                <span class="skill">RESTful API</span>•
-                <span class="skill">OAuth</span>•
-                <span class="skill">Heroku</span>
+
+
+
+
+
             </div>
         </div>
     </section>
@@ -92,7 +115,7 @@
             <h1>Projects</h1>
         </div>
         <div id="project-list">
-            <div id="project-container">
+            <div class="project-container" id="project-container-top">
                 <img class="project-image" src="images/skygreylogo.png" alt="Sky Grey">
                 <div class="project-text">
                     <b>Solo Concept Project | 1 week August 2021</b><br /><br />
@@ -101,9 +124,15 @@
                     (<a href="https://github.com/c-mattingly/Sky-Grey" target="_blank">GitHub</a> •
                     <a href="https://skygrey.herokuapp.com/" target="_blank">Deployed App</a>)
                 </div>
+                <div class="project-screenshots">
+                    <a href="images/skygreyscrn01.png" target="blank"><img src="images/skygreyscrn01.png"
+                            class="project-screenshots-image"></a>
+                    <a href="images/skygreyscrn01.png" target="blank"><img src="images/skygreyscrn2.png"
+                            class="project-screenshots-image"></a>
+                </div>
 
             </div>
-            <div id="project-container">
+            <div class="project-container">
                 <img class="project-image" src="images/planitlogo.png" alt="PlanIt">
                 <div class="project-text">
                     <b>Group Concept Project | 1 week July 2021</b><br />
@@ -117,9 +146,17 @@
                     (<a href="https://github.com/c-mattingly/PlanIt" target="_blank">GitHub</a> •
                     <a href="https://planit2.herokuapp.com/" target="_blank">Deployed App</a>)
                 </div>
+                <div class="project-screenshots">
+                    <a href="images/planitscrn01.png" target="blank">
+                        <img src="images/planitscrn01.png" class="project-screenshots-image"></a>
+                    <a href="images/planitscrn02.png" target="blank">
+                        <img src="images/planitscrn02.png" class="project-screenshots-image"></a>
+                    <a href="images/planitscrn03.png" target="blank">
+                        <img src="images/planitscrn03.png" class="project-screenshots-image"></a>
+                </div>
 
             </div>
-            <div id="project-container">
+            <div class="project-container">
                 <img class="project-image" src="images/dinologo.png" alt="DinoWar">
                 <div class="project-text">
                     <b>Solo Concept Project | 1 week June 2021</b><br /><br />
@@ -128,9 +165,17 @@
                     (<a href="https://github.com/c-mattingly/DinoWar" target="_blank">GitHub</a> •
                     <a href="https://c-mattingly.github.io/DinoWar/" target="_blank">Deployed App</a>)
                 </div>
+                <div class="project-screenshots">
+                    <a href="images/dinowarscrn01.png" target="blank">
+                        <img src="images/dinowarscrn01.png" class="project-screenshots-image"></a>
+                    <a href="images/dinowarscrn02.png" target="blank">
+                        <img src="images/dinowarscrn02.png" class="project-screenshots-image"></a>
+                    <a href="images/dinowarscrn03.png" target="blank">
+                        <img src="images/dinowarscrn03.png" class="project-screenshots-image"></a>
+                </div>
 
             </div>
-            <div id="project-container">
+            <div class="project-container" id="project-container-bottom">
                 <img class="project-image" src="images/plotlogo.png" alt="Plot Pundit">
                 <div class="project-text">
                     <b>Solo Concept Project | 1 week June 2021</b><br /></br />
@@ -140,14 +185,33 @@
                     (<a href="https://github.com/c-mattingly/PlotPundit" target="_blank">GitHub</a> •
                     <a href="https://plotpundit.herokuapp.com/" target="_blank">Deployed App</a>)
                 </div>
+                <div class="project-screenshots">
+                    <a href="images/plotscrn01.png" target="blank">
+                        <img src="images/plotscrn01.png" class="project-screenshots-image"></a>
+                    <a href="images/plotscrn02.png" target="blank">
+                        <img src="images/plotscrn02.png" class="project-screenshots-image"></a>
+                    <a href="images/plotscrn03.png" target="blank">
+                        <img src="images/plotscrn03.png" class="project-screenshots-image"></a>
+                </div>
 
             </div>
         </div>
     </section>
 
     <section id="contact">
+        <div id="contact-title">
+            <h1>Contact</h1>
+        </div>
         <div id="contact-list">
-            <a href=""><img src="" alt=""></a>
+            <a href="https://www.linkedin.com/in/c-mike-mattingly/" target="-blank" class="icon"><i
+                    class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/c-mattingly" target="-blank" class="icon">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="mailto:cmattingly1584@gmail.com" target="-blank" class="icon">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </section>
     <footer>
