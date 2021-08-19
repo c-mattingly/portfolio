@@ -22,7 +22,6 @@ header {
 
 #header-content {
     position: relative;
-    /* background:rgba(0, 91, 144, .3); */
     height: fit-content;
     text-align: center;
     padding: 20px;
@@ -38,6 +37,10 @@ header {
     margin-top: -10px;
 }
 
+#header-content>h3 {
+    margin-bottom: -20px;
+}
+
 .icon {
     font-size: 40px;
     color: rgba(255, 255, 255, .5);
@@ -49,10 +52,6 @@ header {
 .icon:hover {
     color: rgba(10, 121, 206, 1);
     text-shadow: 1px 1px black;
-}
-
-#header-content>h3 {
-    margin-bottom: -20px;
 }
 
 nav {
@@ -178,7 +177,11 @@ li a:hover {
     padding: 10px;
     padding-left: 30px;
     align-items: center;
-    
+}
+
+.skill:hover {
+    color: white;
+    text-shadow: 1px 1px black;
 }
 
 td {
@@ -186,9 +189,8 @@ td {
     vertical-align: middle;
 }
 
-.skill:hover {
-    color: white;
-    text-shadow: 1px 1px black;
+#skills-small-bottom {
+    display: none;
 }
 
 #skills-table-bottom {
@@ -319,4 +321,251 @@ footer {
     border-bottom: none;
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+
+    header {
+        background-image: url('../images/mattingleysmall.png');
+    }
+
+    #header-content {
+       font-size: 25px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 40px;
+        right: 0;
+        z-index: 5;
+        padding-right: 5px;
+    }
+    
+    #nav-bg {
+        width: 550px;
+        top: 0px;
+        border-radius: 0;
+    }
+
+    nav > ul {
+        justify-content: center;
+        margin-top: -5px;
+        margin-left: -25px;
+    }
+
+    li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #about-title {
+        width: 200px;
+    }
+
+    #about-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #about-image {
+        margin-top: -340px;
+        ;
+    }
+
+    #skills-title {
+        width: 200px;
+    }
+
+    #skills-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .skill {
+        display: inline-block;
+        font-weight: bold;
+        padding: 5px;
+        padding-left: 15px;
+        align-items: center;
+    }
+
+    #skills-small-bottom {
+        visibility: hidden;
+    }
+
+    #skills-table-bottom {
+        margin-left: 0px;
+        padding: -10px;
+    }
+
+    #skills-table-bottom td {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    #projects-title {
+        width: 200px;
+    }
+
+    #project-list {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .project-container {
+        max-width: 380px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .project-image {
+        width: 300px;
+        height: 92px;
+        margin-bottom: 10px;
+    }
+
+    #contact-title {
+        width: 200px;
+    }
+
+    #contact-list {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header {
+        background-image: url('../images/mattingleytiny.png');
+    }
+
+    #header-content {
+       font-size: 22px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 40px;
+        right: 0;
+        z-index: 5;
+        padding-right: 5px;
+    }
+    
+    #nav-bg {
+        width: 550px;
+        top: 0px;
+        border-radius: 0;
+    }
+
+    nav > ul {
+        justify-content: center;
+        margin-top: -5px;
+        margin-left: -35px;
+    }
+
+    li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #about-title {
+        width: 150px;
+    }
+
+    #about-content {
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #about-image {
+        margin-top: 20px;
+        margin-left: -3px;
+        margin-bottom: -50px;
+    }
+
+    #about-text {
+        margin-bottom: -50px;
+    }
+
+    #skills-title {
+        width: 150px;
+    }
+
+    #skills-content {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .skill {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 0px;
+        padding-left: 5px;
+        align-items: center;
+    }
+
+    .skillimg {
+        width: 36px;
+    }
+
+    #skills-small-bottom {
+        visibility: visible;
+        margin-bottom: -20px;
+    }
+
+    #skills-table-bottom {
+        visibility: hidden;
+    }
+
+    #skills-table-bottom td {
+        font-size: 10px;
+    }
+
+    #projects-title {
+        width: 150px;
+    }
+
+    #project-list {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .project-container {
+        max-width: 250px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .project-image {
+        width: 290px;
+        height: 89px;
+        margin-bottom: 10px;
+    }
+
+    #project-container-top {
+        margin-top: 7px;
+    }
+
+    #project-container-bottom {
+        margin-bottom: 7px;
+    }
+
+    .project-screenshots-image {
+        height: 188px;
+        width: 260px;
+        padding: 10px;
+    }
+
+    #contact-title {
+        width: 200px;
+    }
+
+    #contact-list {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
