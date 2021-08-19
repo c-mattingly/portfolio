@@ -390,10 +390,6 @@ footer {
         align-items: center;
     }
 
-    #skills-small-bottom {
-        visibility: hidden;
-    }
-
     #skills-table-bottom {
         margin-left: 0px;
         padding: -10px;
@@ -513,12 +509,12 @@ footer {
     }
 
     #skills-small-bottom {
-        visibility: visible;
+        display: unset;
         margin-bottom: -20px;
     }
 
     #skills-table-bottom {
-        visibility: hidden;
+        display: none;
     }
 
     #skills-table-bottom td {
