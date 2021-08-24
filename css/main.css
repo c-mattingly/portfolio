@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-image: url('../images/mattingley.png');
+    background-image: url('../images/mattingley.jpg');
     background-size: cover;
     justify-content: left;
     display: flex;
@@ -326,7 +326,7 @@ footer {
 @media screen and (max-width: 550px) {
 
     header {
-        background-image: url('../images/mattingleysmall.png');
+        background-image: url('../images/mattingleysmall.jpg');
     }
 
     #header-content {
@@ -433,7 +433,7 @@ footer {
 
 @media screen and (max-width: 390px) {
     header {
-        background-image: url('../images/mattingleytiny.png');
+        background-image: url('../images/mattingleytiny.jpg');
     }
 
     #header-content {
